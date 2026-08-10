@@ -2145,3 +2145,55 @@ footer .footer-small {
     }
 
 }
+
+
+/* =========================================================
+   CARRUSELES TÁCTILES EN MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .carousel-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+
+        cursor: grab;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-container:active {
+        cursor: grabbing;
+    }
+
+    .carousel-images {
+        width: max-content;
+        transform: none !important;
+        transition: none;
+
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Ocultar flechas en celular */
+    .carousel-button {
+        display: none !important;
+    }
+
+    /* Evita que las tarjetas se reduzcan */
+    .series-card {
+        flex: 0 0 175px;
+    }
+
+    .horror-card {
+        flex: 0 0 185px;
+    }
+}
