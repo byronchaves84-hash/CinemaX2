@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CINEMAX</title>
+
+    <meta name="description"
+          content="CINEMAX - Películas, series y terror en un solo lugar.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="main-header" id="mainHeader">
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+            CINEMAX
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#peliculas">
+                Películas
+            </a>
+
+            <a href="#series">
+                Series
+            </a>
+
+            <a href="#terror">
+                Terror
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             BUSCADOR
+        ================================================== -->
+
+        <div class="search-box">
+
+            <span class="search-icon">
+                🔍
+            </span>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Buscar películas o series..."
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Buscar películas y series">
+
+            <button
+                type="button"
+                class="search-clear"
+                id="searchClear"
+                aria-label="Limpiar búsqueda">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="menu-button"
+            id="menuButton"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            CINEMAX ORIGINAL
+        </span>
+
+        <h1>
+            TU CINE.
+            <br>
+            TU MUNDO.
+        </h1>
+
+        <p>
+            Disfruta películas, series y terror en una experiencia
+            diseñada para sentirte dentro del cine.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#peliculas"
+                class="hero-btn primary">
+
+                ▶ Explorar ahora
+
+            </a>
+
+
+            <a
+                href="#series"
+                class="hero-btn secondary">
+
+                ＋ Ver series
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     RESULTADOS DE BÚSQUEDA
+========================================================= -->
+
+<section
+    class="search-results"
+    id="searchResults"
+    aria-live="polite">
+
+    <div class="search-results-inner">
+
+        <span class="search-results-kicker">
+            RESULTADOS DE BÚSQUEDA
+        </span>
+
+        <h2 id="searchResultsTitle">
+            Resultados
+        </h2>
+
+        <p id="searchResultsCount">
+            0 resultados
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MENSAJE SIN RESULTADOS
+========================================================= -->
+
+<div
+    class="no-results"
+    id="noResults">
+
+    <div class="no-results-icon">
+        🔎
+    </div>
+
+    <h2>
+        No encontramos resultados
+    </h2>
+
+    <p>
+        Intenta buscar con otro nombre.
+    </p>
+
+</div>
+
+
+
+<!-- =========================================================
+     CATEGORÍAS
+========================================================= -->
+
+<section class="category-bar">
+
+    <a href="#peliculas">
+        🎬 Películas
+    </a>
+
+    <a href="#series">
+        📺 Series
+    </a>
+
+    <a href="#terror">
+        👻 Terror
+    </a>
+
+    <a href="#peliculas">
+        🔥 Populares
+    </a>
+
+</section>
+
+
+
+<!-- =========================================================
+     PELÍCULAS
+========================================================= -->
+
+<section
+    class="content-section searchable-section"
+    id="peliculas"
+    data-section="peliculas">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-kicker">
+                COLECCIÓN CINEMAX
+            </span>
+
+            <h2>
+                Películas
+            </h2>
+
+        </div>
+
+        <span class="section-count">
+            17 títulos
+        </span>
+
+    </div>
+
+
+    <section class="anime-gallery">
+
+
+        <!-- PELÍCULA 1 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 1">
+
+            <a href="enlace1/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime1.jpg"
+                        alt="Película 1"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+
+                        <span class="play-circle">
+                            ▶
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+
+                    <h3>
+                        Película 1
+                    </h3>
+
+                    <p>
+                        Ver película
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 2 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 2">
+
+            <a href="enlace2/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime2.jpg"
+                        alt="Película 2"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 2</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 3 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 3">
+
+            <a href="enlace3/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime3.jpg"
+                        alt="Película 3"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 3</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 4 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 4">
+
+            <a href="enlace4/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime4.jpg"
+                        alt="Película 4"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 4</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 5 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 5">
+
+            <a href="enlace5/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime5.jpg"
+                        alt="Película 5"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 5</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 6 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 6">
+
+            <a href="enlace6/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime6.jpg"
+                        alt="Película 6"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 6</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 7 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 7">
+
+            <a href="enlace7/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime7.jpeg"
+                        alt="Película 7"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 7</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 8 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 8">
+
+            <a href="enlace8/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime8.jpg"
+                        alt="Película 8"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 8</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 9 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 9">
+
+            <a href="enlace9/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime9.jpg"
+                        alt="Película 9"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 9</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 10 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 10">
+
+            <a href="enlace10/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime10.jpg"
+                        alt="Película 10"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 10</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 11 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 11">
+
+            <a href="enlace11/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime11.jpg"
+                        alt="Película 11"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 11</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 12 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 12">
+
+            <a href="enlace12/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime12.jpg"
+                        alt="Película 12"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 12</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 13 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 13">
+
+            <a href="enlace13/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime13.jpg"
+                        alt="Película 13"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 13</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 14 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 14">
+
+            <a href="enlace14/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime14.jpg"
+                        alt="Película 14"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 14</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 15 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 15">
+
+            <a href="enlace15/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime15.jpg"
+                        alt="Película 15"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 15</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 16 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 16">
+
+            <a href="enlace16/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime16.jpg"
+                        alt="Película 16"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 16</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- PELÍCULA 17 -->
+
+        <div
+            class="anime-item searchable-card"
+            data-title="Película 17">
+
+            <a href="enlace17/enlace1.html">
+
+                <div class="poster-container">
+
+                    <img
+                        src="images/anime17.jpg"
+                        alt="Película 17"
+                        loading="lazy">
+
+                    <div class="poster-overlay">
+                        <span class="play-circle">▶</span>
+                    </div>
+
+                </div>
+
+                <div class="card-info">
+                    <h3>Película 17</h3>
+                    <p>Ver película</p>
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<!-- =========================================================
+     SERIES
+========================================================= -->
+
+<section
+    class="content-section series-section searchable-section"
+    id="series"
+    data-section="series">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-kicker">
+                SERIES
+            </span>
+
+            <h2>
+                Series destacadas
+            </h2>
+
+        </div>
+
+        <span class="section-count">
+            9 series
+        </span>
+
+    </div>
+
+
+    <div class="carousel-wrapper">
+
+        <button
+            class="carousel-button prev"
+            id="seriesPrev"
+            aria-label="Series anteriores">
+
+            ‹
+
+        </button>
+
+
+        <div
+            class="carousel-container"
+            id="seriesCarousel">
+
+            <div class="carousel-images">
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 1">
+
+                    <a href="Serie1/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie1.jpg"
+                                alt="Serie 1"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 1</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 2">
+
+                    <a href="Serie2/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie2.jpg"
+                                alt="Serie 2"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 2</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 3">
+
+                    <a href="Serie3/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie3.jpg"
+                                alt="Serie 3"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 3</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 4">
+
+                    <a href="Serie 4/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie4.jpg"
+                                alt="Serie 4"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 4</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 5">
+
+                    <a href="Serie /index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie5.jpg"
+                                alt="Serie 5"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 5</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 6">
+
+                    <a href="Serie 6/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie6.jpg"
+                                alt="Serie 6"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 6</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 7">
+
+                    <a href="Serie7/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror11.jpg"
+                                alt="Serie 7"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 7</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 8">
+
+                    <a href="Serie8/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/serie8.jpg"
+                                alt="Serie 8"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 8</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="series-card searchable-card"
+                    data-title="Serie 9">
+
+                    <a href="serie9/index.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror12.jpg"
+                                alt="Serie 9"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Serie 9</h3>
+                            <p>Ver serie</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="carousel-button next"
+            id="seriesNext"
+            aria-label="Siguientes series">
+
+            ›
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TERROR
+========================================================= -->
+
+<section
+    class="content-section horror-section searchable-section"
+    id="terror"
+    data-section="terror">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-kicker horror-kicker">
+                ⚠ CINE DE TERROR
+            </span>
+
+            <h2>
+                Noche de terror
+            </h2>
+
+        </div>
+
+        <span class="section-count">
+            9 títulos
+        </span>
+
+    </div>
+
+
+    <div class="carousel-wrapper">
+
+        <button
+            class="carousel-button horror-button prev"
+            id="horrorPrev"
+            aria-label="Terror anterior">
+
+            ‹
+
+        </button>
+
+
+        <div
+            class="carousel-container"
+            id="horrorCarousel">
+
+            <div class="carousel-images">
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 1">
+
+                    <a href="terror1/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror1.jpg"
+                                alt="Terror 1"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 1</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 2">
+
+                    <a href="terror2/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror2.jpg"
+                                alt="Terror 2"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 2</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 3">
+
+                    <a href="terror3/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror3.jpg"
+                                alt="Terror 3"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 3</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 4">
+
+                    <a href="terror4/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror6.jpg"
+                                alt="Terror 6"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 4</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 5">
+
+                    <a href="terror5/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror7.jpg"
+                                alt="Terror 7"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 5</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 6">
+
+                    <a href="terror6/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror8.jpg"
+                                alt="Terror 8"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 6</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 7">
+
+                    <a href="terror7/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror9.jpg"
+                                alt="Terror 9"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 7</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 8">
+
+                    <a href="terror8/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror10.jpg"
+                                alt="Terror 10"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 8</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div
+                    class="horror-card searchable-card"
+                    data-title="Terror 9">
+
+                    <a href="terror9/enlace1.html">
+
+                        <div class="poster-container">
+
+                            <img
+                                src="images/terror11.jpg"
+                                alt="Terror 11"
+                                loading="lazy">
+
+                            <div class="poster-overlay">
+                                <span class="play-circle">▶</span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Terror 9</h3>
+                            <p>Ver película</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="carousel-button horror-button next"
+            id="horrorNext"
+            aria-label="Siguiente terror">
+
+            ›
+
+        </button>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        CINEMAX
+    </div>
+
+    <p>
+        © CINEMAX 2026 — Todos los derechos reservados.
+    </p>
+
+    <p class="footer-small">
+        Películas · Series · Terror
+    </p>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT INTEGRADO
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       ELEMENTOS PRINCIPALES
+    ===================================================== */
+
+    const searchInput =
+        document.getElementById("searchInput");
+
+    const searchClear =
+        document.getElementById("searchClear");
+
+    const searchResults =
+        document.getElementById("searchResults");
+
+    const searchResultsTitle =
+        document.getElementById("searchResultsTitle");
+
+    const searchResultsCount =
+        document.getElementById("searchResultsCount");
+
+    const noResults =
+        document.getElementById("noResults");
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const mainNav =
+        document.getElementById("mainNav");
+
+    const header =
+        document.getElementById("mainHeader");
+
+
+    /* =====================================================
+       NORMALIZAR TEXTO
+       Permite buscar:
+       "Breaking Bad"
+       "breaking bad"
+       "BREAKING BAD"
+       etc.
+    ===================================================== */
+
+    function normalizeText(text) {
+
+        return text
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+
+    }
+
+
+
+    /* =====================================================
+       OBTENER TODAS LAS TARJETAS
+    ===================================================== */
+
+    const cards =
+        Array.from(
+            document.querySelectorAll(
+                ".searchable-card"
+            )
+        );
+
+
+    /* =====================================================
+       OBTENER TODAS LAS SECCIONES
+    ===================================================== */
+
+    const sections =
+        Array.from(
+            document.querySelectorAll(
+                ".searchable-section"
+            )
+        );
+
+
+
+    /* =====================================================
+       BUSCADOR
+    ===================================================== */
+
+    function performSearch() {
+
+        const query =
+            normalizeText(
+                searchInput.value
+            );
+
+
+        /* ===============================================
+           SI NO HAY BÚSQUEDA
+        =============================================== */
+
+        if (query === "") {
+
+            cards.forEach(function (card) {
+
+                card.classList.remove(
+                    "search-hidden"
+                );
+
+            });
+
+
+            sections.forEach(function (section) {
+
+                section.classList.remove(
+                    "search-section-hidden"
+                );
+
+            });
+
+
+            searchResults.classList.remove(
+                "active"
+            );
+
+            noResults.classList.remove(
+                "active"
+            );
+
+            searchClear.classList.remove(
+                "visible"
+            );
+
+            return;
+
+        }
+
+
+        /* ===============================================
+           MOSTRAR BOTÓN LIMPIAR
+        =============================================== */
+
+        searchClear.classList.add(
+            "visible"
+        );
+
+
+        /* ===============================================
+           BUSCAR TARJETAS
+        =============================================== */
+
+        let totalResults = 0;
+
+
+        cards.forEach(function (card) {
+
+
+            const title =
+                card.dataset.title || "";
+
+
+            const heading =
+                card.querySelector("h3");
+
+
+            const image =
+                card.querySelector("img");
+
+
+            const description =
+                card.querySelector("p");
+
+
+            const searchableText = normalizeText(
+
+                title + " " +
+
+                (heading
+                    ? heading.textContent
+                    : "") + " " +
+
+                (image
+                    ? image.alt
+                    : "") + " " +
+
+                (description
+                    ? description.textContent
+                    : "")
+
+            );
+
+
+            const matches =
+                searchableText.includes(query);
+
+
+            if (matches) {
+
+                card.classList.remove(
+                    "search-hidden"
+                );
+
+                totalResults++;
+
+            } else {
+
+                card.classList.add(
+                    "search-hidden"
+                );
+
+            }
+
+        });
+
+
+
+        /* ===============================================
+           OCULTAR SECCIONES VACÍAS
+        =============================================== */
+
+        sections.forEach(function (section) {
+
+
+            const visibleCards =
+                section.querySelectorAll(
+                    ".searchable-card:not(.search-hidden)"
+                );
+
+
+            if (visibleCards.length === 0) {
+
+                section.classList.add(
+                    "search-section-hidden"
+                );
+
+            } else {
+
+                section.classList.remove(
+                    "search-section-hidden"
+                );
+
+            }
+
+        });
+
+
+
+        /* ===============================================
+           MOSTRAR PANEL RESULTADOS
+        =============================================== */
+
+        searchResults.classList.add(
+            "active"
+        );
+
+
+        searchResultsTitle.textContent =
+            'Resultados para "' +
+            searchInput.value +
+            '"';
+
+
+        if (totalResults === 1) {
+
+            searchResultsCount.textContent =
+                "1 resultado encontrado";
+
+        } else {
+
+            searchResultsCount.textContent =
+                totalResults +
+                " resultados encontrados";
+
+        }
+
+
+
+        /* ===============================================
+           SIN RESULTADOS
+        =============================================== */
+
+        if (totalResults === 0) {
+
+            noResults.classList.add(
+                "active"
+            );
+
+        } else {
+
+            noResults.classList.remove(
+                "active"
+            );
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       EVENTO INPUT
+    ===================================================== */
+
+    if (searchInput) {
+
+        searchInput.addEventListener(
+            "input",
+            performSearch
+        );
+
+    }
+
+
+
+    /* =====================================================
+       LIMPIAR BUSCADOR
+    ===================================================== */
+
+    if (searchClear) {
+
+        searchClear.addEventListener(
+            "click",
+            function () {
+
+                searchInput.value = "";
+
+                performSearch();
+
+                searchInput.focus();
+
+            }
+        );
+
+    }
+
+
+
+    /* =====================================================
+       ESC PARA LIMPIAR
+    ===================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                document.activeElement === searchInput
+            ) {
+
+                searchInput.value = "";
+
+                performSearch();
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       MENU MOVIL
+    ===================================================== */
+
+    if (menuButton && mainNav) {
+
+        menuButton.addEventListener(
+            "click",
+            function () {
+
+                const active =
+                    mainNav.classList.toggle(
+                        "active"
+                    );
+
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    active
+                );
+
+            }
+        );
+
+    }
+
+
+
+    /* =====================================================
+       CERRAR MENU AL HACER CLICK
+    ===================================================== */
+
+    document
+        .querySelectorAll(".main-nav a")
+        .forEach(function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    mainNav.classList.remove(
+                        "active"
+                    );
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       CARRUSEL
+    ===================================================== */
+
+    function createCarousel(
+        carouselId,
+        previousId,
+        nextId
+    ) {
+
+
+        const carousel =
+            document.getElementById(
+                carouselId
+            );
+
+
+        const previous =
+            document.getElementById(
+                previousId
+            );
+
+
+        const next =
+            document.getElementById(
+                nextId
+            );
+
+
+        if (
+            !carousel ||
+            !previous ||
+            !next
+        ) {
+            return;
+        }
+
+
+        const track =
+            carousel.querySelector(
+                ".carousel-images"
+            );
+
+
+        if (!track) {
+            return;
+        }
+
+
+        let position = 0;
+
+
+
+        /* ===============================================
+           CALCULAR PASO
+        =============================================== */
+
+        function getStep() {
+
+
+            const card =
+                track.querySelector(
+                    ".series-card, .horror-card"
+                );
+
+
+            if (!card) {
+                return 300;
+            }
+
+
+            const style =
+                window.getComputedStyle(
+                    card
+                );
+
+
+            const marginLeft =
+                parseFloat(
+                    style.marginLeft
+                ) || 0;
+
+
+            const marginRight =
+                parseFloat(
+                    style.marginRight
+                ) || 0;
+
+
+            const gap =
+                parseFloat(
+                    window.getComputedStyle(
+                        track
+                    ).gap
+                ) || 0;
+
+
+            return (
+                card.offsetWidth +
+                marginLeft +
+                marginRight +
+                gap
+            );
+
+        }
+
+
+
+        /* ===============================================
+           MÁXIMA POSICIÓN
+        =============================================== */
+
+        function getMaxPosition() {
+
+            return Math.max(
+                0,
+                track.scrollWidth -
+                carousel.clientWidth
+            );
+
+        }
+
+
+
+        /* ===============================================
+           ACTUALIZAR
+        =============================================== */
+
+        function updateCarousel() {
+
+
+            const max =
+                getMaxPosition();
+
+
+            position =
+                Math.max(
+                    0,
+                    Math.min(
+                        position,
+                        max
+                    )
+                );
+
+
+            track.style.transform =
+                "translateX(-" +
+                position +
+                "px)";
+
+        }
+
+
+
+        /* ===============================================
+           SIGUIENTE
+        =============================================== */
+
+        next.addEventListener(
+            "click",
+            function () {
+
+                position += getStep();
+
+                updateCarousel();
+
+            }
+        );
+
+
+
+        /* ===============================================
+           ANTERIOR
+        =============================================== */
+
+        previous.addEventListener(
+            "click",
+            function () {
+
+                position -= getStep();
+
+                updateCarousel();
+
+            }
+        );
+
+
+
+        /* ===============================================
+           RESIZE
+        =============================================== */
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                updateCarousel();
+
+            }
+        );
+
+
+        updateCarousel();
+
+    }
+
+
+
+    /* =====================================================
+       INICIALIZAR CARRUSELES
+    ===================================================== */
+
+    createCarousel(
+        "seriesCarousel",
+        "seriesPrev",
+        "seriesNext"
+    );
+
+
+    createCarousel(
+        "horrorCarousel",
+        "horrorPrev",
+        "horrorNext"
+    );
+
+
+
+    /* =====================================================
+       NAVBAR AL HACER SCROLL
+    ===================================================== */
+
+    function updateHeader() {
+
+        if (!header) {
+            return;
+        }
+
+
+        if (window.scrollY > 30) {
+
+            header.classList.add(
+                "scrolled"
+            );
+
+        } else {
+
+            header.classList.remove(
+                "scrolled"
+            );
+
+        }
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        updateHeader
+    );
+
+
+    updateHeader();
+
+
+});
+
+</script>
+
+</body>
+</html>
