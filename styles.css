@@ -2127,3 +2127,21 @@ footer .footer-small {
     }
 
 }
+
+/* =========================================================
+   MÓVIL — 3 PELÍCULAS POR FILA
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .anime-gallery {
+        gap: 10px;
+    }
+
+    .anime-item {
+        flex: 0 1 calc(33.333% - 10px);
+        min-width: 0;
+        max-width: none;
+    }
+
+}
